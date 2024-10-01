@@ -15,7 +15,7 @@ Route::get('/', function () {
     if (session()->has('logged_in_user')) {
         return redirect()->route('dashboard');
     } else {
-        return redirect()->route('auth/login');
+        return view('auth.login');
     }
 });
 
