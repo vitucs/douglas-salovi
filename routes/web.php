@@ -19,6 +19,11 @@ Route::get('/', function () {
     }
 });
 
+Route::get('/test', function () {
+    return 'Teste de rota bem-sucedido!';
+});
+
+
 Route::get('/login', [RegisteredUserController::class, 'create'])->name('login');
 
 Route::post('/reset-user', [UserController::class, 'reset'])->name('reset.user');
