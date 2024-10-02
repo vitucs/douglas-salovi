@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "dev": "npm run development",
-        "build": "npm run production",
+        "development": "mix",
+        "watch": "mix watch",
+        "build": "mix --production",
         "heroku-postbuild": "npm run build"
     },
     "devDependencies": {
